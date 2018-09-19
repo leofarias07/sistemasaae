@@ -14,7 +14,6 @@
 //Route::get('/', 'SiteController@index');
 
 
-Route::get('admin/setor/tests', 'Admin\SetorController@tests');
 Route:: resource('admin/setor','Admin\SetorController');
 
 $this->group(['middleware'=>['auth'], 'namespace' => 'Admin', 'prefix'=>'admin'],function(){

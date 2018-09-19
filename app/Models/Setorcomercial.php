@@ -6,9 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class setorcomercial extends Model
 {
-      protected $fillable = [
-        'descricao',
+	
+      
+    protected $fillable = [
+        'descricao','condicao',
     ];
+
+
 
  
 }
