@@ -7,8 +7,7 @@ use App\Models\setorcomercial;
 
 class servicos extends Model
 {
-     public function setor()
-    {
-        return $this->hasOne(setorcomercial::Class);
-    }
+     protected $fillable = [
+        'setorcomercials_id','descricao','condicao',
+    ];
 }

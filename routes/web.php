@@ -15,10 +15,12 @@
 
 
 Route:: resource('admin/setor','Admin\SetorController');
+Route:: resource('admin/servico','Admin\ServicoController');
+Route:: resource('admin/arrecadacao','Admin\ServicoController');
 
 $this->group(['middleware'=>['auth'], 'namespace' => 'Admin', 'prefix'=>'admin'],function(){
 	$this->get('/', 'AdminController@index')->name('admin');
-	$this->get('servico', 'ServicoController@index')->name('admin.servico');
+	
 	
 
 

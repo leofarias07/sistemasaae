@@ -2,7 +2,7 @@
 @section('content')
 <div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<h3>Editar Setor: {{ $setor->descricao }}</h3>
+			<h3>Editar Arrecadacão: {{ $arrecadacao->mes }}</h3>
 			@if (count($errors)>0)
 			<div class="alert alert-danger">
 				<ul>
@@ -13,13 +13,13 @@
 			</div>
 			@endif
 
-			{!!Form::model($setor, ['method'=>'PATCH', 'route'=>['setor.update', $setor->id]])!!}
+			{!!Form::model($arrecadacao, ['method'=>'PATCH', 'route'=>['arrecadacao.update', $arrecadacao->id]])!!}
 			{{Form::token()}}
 
             <div class="form-group">
-            	<label for="nome">Descrição</label>
-            	<input type="text" name="descricao" class="form-control" 
-            	value="{{ $setor->descricao }}"
+            	<label for="nome">Mes</label>
+            	<input type="text" name="mes" class="form-control" 
+            	value="{{ $arrecadacao->mes }}"
             	placeholder="Nome...">
             </div>
           
