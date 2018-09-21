@@ -2,7 +2,7 @@
 @section('content')
 <div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<h3>Novo Setor</h3>
+			<h3>Nova Arrecadação</h3>
 			@if (count($errors)>0)
 			<div class="alert alert-danger">
 				<ul>
@@ -13,13 +13,58 @@
 			</div>
 			@endif
 
-			{!!Form::open(array('url'=>'admin/setor','method'=>'POST','autocomplete'=>'off'))!!}
+			{!!Form::open(array('url'=>'admin/arrecadacao','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
-          
+          	
             <div class="form-group">
-            	<label for="descricao">Descrição</label>
-            	<input type="text" name="descricao" class="form-control" placeholder="Descrição...">
+            	<label for="nome">Mês</label>
+            	<input type="text" name="mes" class="form-control" 
+            	
+            	placeholder="Mês...">
             </div>
+             <div class="form-group">
+            	<label for="nome">Ano</label>
+            	<input type="text" name="ano" class="form-control" 
+            	
+            	placeholder="Ano...">
+            </div>
+              <div class="form-group">
+            	<label for="nome">Faturamento</label>
+            	<input type="text" name="faturamento" class="form-control" 
+            	
+            	placeholder="Faturamento...">
+            </div>
+               <div class="form-group">
+            	<label for="nome">Estorno</label>
+            	<input type="text" name="estorno" class="form-control" 
+            	
+            	placeholder="Estorno...">
+            </div>
+            <div class="form-group">
+            	<label for="nome">Saldo faturado</label>
+            	<input type="text" name="saldofaturado" class="form-control" 
+            	
+            	placeholder="Saldo faturado...">
+            </div>
+             <div class="form-group">
+            	<label for="nome">Conta Faturada</label>
+            	<input type="text" name="contafaturada" class="form-control" 
+            	
+            	placeholder="Conta faturada...">
+            </div>
+             <div class="form-group">
+            	<label for="nome">Arrecadação</label>
+            	<input type="text" name="arrecadacao" class="form-control" 
+            	
+            	placeholder="Arrecadação...">
+            </div>
+              <div class="form-group">
+            	<label for="nome">Contas Arrecadadas</label>
+            	<input type="text" name="contasarrecadadas" class="form-control" 
+            	
+            	placeholder="Contas Arrecadadas...">
+            </div>
+          
             <div class="form-group">
             	<button class="btn btn-primary" type="submit">Salvar</button>
             	<button class="btn btn-danger" type="reset">Cancelar</button>

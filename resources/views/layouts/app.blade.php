@@ -12,6 +12,17 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{asset('css/font-awesome.css')}}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="{{asset('css/_all-skins.min.css')}}">
+    <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
+    <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}">
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -74,5 +85,13 @@
             @yield('content')
         </main>
     </div>
+
+        <!-- jQuery 2.1.4 -->
+    <script src="{{asset('js/jQuery-2.1.4.min.js')}}"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <!-- AdminLTE App -->
+    <script src="{{asset('js/app.min.js')}}"></script>
+    <script src="{{asset('js/Chart.js')}}"></script>
 </body>
 </html>

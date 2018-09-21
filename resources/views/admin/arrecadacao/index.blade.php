@@ -24,7 +24,7 @@
               </div>
             </div>
        <div class="box-footer clearfix">
-              <a href="setor/create" class="btn btn-sm btn-info btn-flat pull-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nova Arrecadacão</font></font></a>
+              <a href="arrecadacao/create" class="btn btn-sm btn-info btn-flat pull-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nova Arrecadacão</font></font></a>
  <div class="row">
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
     

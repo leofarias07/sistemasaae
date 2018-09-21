@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Setorcomercial;
-use App\Http\Requests\arrecadacaoValidationFormRequest;
-use App\Http\Requests\SetorFormRequest;
+use App\Models\Arrecadacao;
+use App\Http\Requests\ArrecadacaoValidationFormRequest;
+use App\Http\Requests\ArrecadacaoFormRequest;
 use Illuminate\Support\Facades\Redirect;
 use DB;
 
@@ -87,7 +87,7 @@ class ArrecadacaoController extends Controller
         $arrecadacao->contafaturada=$request->get('contafaturada');
         $arrecadacao->arrecadacao=$request->get('arrecadacao');
         $arrecadacao->contasarrecadadas=$request->get('contasarrecadadas');
-        $setor->update();
+        $arrecadacao->update();
         return Redirect::to('admin/arrecadacao');
 
     }
